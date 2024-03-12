@@ -5368,7 +5368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7815eac865275a947a2c37e42f4916f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 750
+  health: 500
 --- !u!54 &1005867907
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10988,12 +10988,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   castelText: {fileID: 1227462131}
   redSugarText: {fileID: 561004909}
-  redSugar: 500
+  redSugar: 400
   canons:
   - {fileID: 3996854645059550563, guid: 49123ce6668732142a2ccf1835d4531a, type: 3}
   - {fileID: 7290811461234774047, guid: 53e60c40aadd4be46817ef1772785870, type: 3}
   cost: 6400000096000000
-  upgrades: c8000000c8000000
+  upgrades: c8000000fa000000
   canonsParent: {fileID: 760294998}
   smallEnemy: {fileID: 5186966566232342769, guid: e26090dbfdb769e4ab1124b6055ca27e, type: 3}
   bigEnemy: {fileID: 1378144646113448292, guid: 4c28f3b81cb697a4981caf169f7f0087, type: 3}
@@ -11980,7 +11980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1969324499
 RectTransform:
   m_ObjectHideFlags: 0

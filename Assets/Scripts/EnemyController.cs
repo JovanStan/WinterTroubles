@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour
 
     public float health = 0;
     public float maxHealth = 100;
-    public int reward = 20;
+    public int reward = 30;
     public int id;
 
     public RectTransform healthUI;

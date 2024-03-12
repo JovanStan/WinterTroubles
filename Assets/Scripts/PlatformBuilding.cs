@@ -8,7 +8,7 @@ public class PlatformBuilding : MonoBehaviour
 
     public GameObject panelCreate, panelUpgrade;
     private GameObject canon = null;
-    public GameObject circle;
+    //public GameObject circle;
     
     void Start()
     {
@@ -21,13 +21,9 @@ public class PlatformBuilding : MonoBehaviour
 		{
             case 0:
                 canon = GameManager.instance.PlaceCanon(transform.position, type);
-                OnMouseEnter();
-                circle.transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
                 break;
             case 1:
                 canon = GameManager.instance.PlaceCanon(transform.position, type);
-                OnMouseEnter();
-                circle.transform.localScale = new Vector3(1.86f, 1.86f, 1.86f);
                 break;
             case 2:
                 GameManager.instance.UpgradeCanon(canon.GetComponent<Cannon>());
@@ -49,7 +45,8 @@ public class PlatformBuilding : MonoBehaviour
 		{
             return;
 		}
-        GameObject panel;
+
+		GameObject panel;
         if (canon == null)
 		{
             GameManager.instance.HidePanels();
@@ -69,16 +66,6 @@ public class PlatformBuilding : MonoBehaviour
 		{
             panel.SetActive(true);
 		}
-    }
-
-	private void OnMouseExit()
-	{
-        circle.SetActive(false);
-    }
-
-	private void OnMouseEnter()
-	{
-        circle.SetActive(true);
     }
 
 }
